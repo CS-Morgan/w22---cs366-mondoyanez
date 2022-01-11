@@ -1,4 +1,18 @@
-h1{
+h1, h2{
     text-align: center;
-    color: blueviolet;
+    color: black;
+}
+body{
+    background-color: #00ffff;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
 }

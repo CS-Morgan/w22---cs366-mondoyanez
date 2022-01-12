@@ -17,3 +17,7 @@ table, th, td{
     margin-left: auto;
     margin-right: auto;
 }
+
+figcaption{
+    font-variant: small-caps;
+}

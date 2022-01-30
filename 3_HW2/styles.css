@@ -1,7 +1,7 @@
 body
 {
     background-color: plum;
-    color: white;
+    color: black;
 }
 p 
 {
@@ -19,6 +19,10 @@ p
 {
     color: black;
 }
+.result
+{
+    display: none;
+}
 .submitButton
 {
     text-align: center;
@@ -29,6 +33,6 @@ h1
 }
 input[type="submit"]
 {
-    background: red;
-    color: white;
+    background: cyan;
+    color: black;
 }

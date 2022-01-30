@@ -36,8 +36,6 @@ function checkAnswers()
             element.classList.add("correct");
         }
     }
-
-    alert("Number of correct answers were " + numCorrect);
 }
 
 function emptyUserAnswers()

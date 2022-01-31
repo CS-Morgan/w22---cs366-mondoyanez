@@ -19,10 +19,17 @@ p
 {
     color: black;
 }
-.result
+.perfect
 {
-    display: none;
-    text-align: center;
+    color: gold;
+}
+.pass
+{
+    color: greenyellow;
+}
+.fail
+{
+    color: red;
 }
 .submitButton
 {

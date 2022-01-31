@@ -17,6 +17,7 @@ function addToAnswers(currentQuestion)
 function checkAnswers()
 {
     var numCorrect = 0;
+
     for (let i = 0; i < 5; i++)
     {
         var id = userAnswers[i];
@@ -36,6 +37,32 @@ function checkAnswers()
             element.classList.add("correct");
         }
     }
+
+    if (getScore(numCorrect) === 1)
+    {
+        $(".row").after("<div class = \"perfect\"><h5>PERFECT</h5></div>");
+        alert("PERFECT");
+    }
+    else if (getScore(numCorrect) >= 0.7)
+    {
+        $(".row").after("<div class = \"pass\"><h5>PASS</h5></div>");
+        alert("PASS");
+    }
+    else if (getScore(numCorrect) < 0.7)
+    {
+        $(".row").after("<div class = \"fail\"><h5>FAIL</h5></div>");
+        alert("FAIL");
+    }
+    else
+    {
+        alert("Something went wrong");
+    }
+}
+
+function getScore(score)
+{
+    const totalQuestions = 5;
+    return score / totalQuestions;
 }
 
 function emptyUserAnswers()
@@ -60,5 +87,4 @@ $(button).click(function(){
     addToAnswers(currentQuestion);
 
     checkAnswers();
-
 });

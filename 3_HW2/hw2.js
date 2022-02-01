@@ -40,18 +40,15 @@ function checkAnswers()
 
     if (getScore(numCorrect) === 1)
     {
-        $(".row").after("<div class = \"perfect\"><h5>PERFECT</h5></div>");
-        alert("PERFECT");
+        $(".row").after("<div class = \"perfect\"><h4>PERFECT</h4></div>");
     }
     else if (getScore(numCorrect) >= 0.7)
     {
-        $(".row").after("<div class = \"pass\"><h5>PASS</h5></div>");
-        alert("PASS");
+        $(".row").after("<div class = \"pass\"><h4>PASS</h4></div>");
     }
     else if (getScore(numCorrect) < 0.7)
     {
-        $(".row").after("<div class = \"fail\"><h5>FAIL</h5></div>");
-        alert("FAIL");
+        $(".row").after("<div class = \"fail\"><h4>FAIL</h4></div>");
     }
     else
     {

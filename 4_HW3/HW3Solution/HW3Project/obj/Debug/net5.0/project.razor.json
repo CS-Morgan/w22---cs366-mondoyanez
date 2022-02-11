@@ -15619,11 +15619,6 @@
   "RootNamespace": "HW3Project",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\4_HW3\\HW3Solution\\HW3Project\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\4_HW3\\HW3Solution\\HW3Project\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -15639,8 +15634,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\4_HW3\\HW3Solution\\HW3Project\\Views\\Home\\filmLibrary.cshtml",
+      "TargetPath": "Views\\Home\\filmLibrary.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\4_HW3\\HW3Solution\\HW3Project\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\4_HW3\\HW3Solution\\HW3Project\\Views\\Home\\myLibrary.cshtml",
+      "TargetPath": "Views\\Home\\myLibrary.cshtml",
       "FileKind": "mvc"
     },
     {

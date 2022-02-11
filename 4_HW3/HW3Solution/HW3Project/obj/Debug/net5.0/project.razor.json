@@ -15634,8 +15634,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\4_HW3\\HW3Solution\\HW3Project\\Views\\Home\\filmLibrary.cshtml",
-      "TargetPath": "Views\\Home\\filmLibrary.cshtml",
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\4_HW3\\HW3Solution\\HW3Project\\Views\\Home\\FilmLibrary.cshtml",
+      "TargetPath": "Views\\Home\\FilmLibrary.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15644,8 +15644,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\4_HW3\\HW3Solution\\HW3Project\\Views\\Home\\myLibrary.cshtml",
-      "TargetPath": "Views\\Home\\myLibrary.cshtml",
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\4_HW3\\HW3Solution\\HW3Project\\Views\\Home\\MyLibrary.cshtml",
+      "TargetPath": "Views\\Home\\MyLibrary.cshtml",
       "FileKind": "mvc"
     },
     {

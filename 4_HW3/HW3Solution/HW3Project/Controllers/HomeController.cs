@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using HW3Project.Models;
 
 namespace HW3Project.Controllers
@@ -28,10 +23,11 @@ namespace HW3Project.Controllers
 
             foreach(var m in moviesAvaible.films)
             {
-                if (m.MovieId == movieId) 
+                if (m.movieId == movieId) 
                 {
-                    movieAdded.MovieId = m.MovieId;
-                    movieAdded.MovieTitle = m.MovieTitle;
+                    movieAdded.movieId = m.movieId;
+                    movieAdded.movieTitle = m.movieTitle;
+                    movieAdded.dueDate = DateTime.Now.AddDays(14).ToString();
                 }
             }
 

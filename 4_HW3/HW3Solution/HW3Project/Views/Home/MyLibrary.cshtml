@@ -16,7 +16,13 @@
                     <tr><th>Movie Title</th><th>Return Date</th>
                 </thead>
                 <tbody>
-                    @* @foreach (HW3Project.Models.UserLibrary u in ) *@
+                    @* @foreach (HW3Project.Models.UserLibrary u in Library)
+                    {
+                        <tr>
+                            <td>@u.MovieTitle</td>
+                            <td>@u.DueDate</td>
+                        </tr>
+                    } *@
                 </tbody>
             </table>
         </div>

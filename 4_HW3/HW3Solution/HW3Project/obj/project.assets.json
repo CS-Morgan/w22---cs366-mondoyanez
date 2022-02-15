@@ -8,26 +8,24 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ayane\\.nuget\\packages\\": {}
+    "/home/mondo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\4_HW3\\HW3Solution\\HW3Project\\HW3Project.csproj",
+      "projectUniqueName": "/home/mondo/Documents/School/Winter 2022/CS366/repo/w22---cs366-mondoyanez/4_HW3/HW3Solution/HW3Project/HW3Project.csproj",
       "projectName": "HW3Project",
-      "projectPath": "C:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\4_HW3\\HW3Solution\\HW3Project\\HW3Project.csproj",
-      "packagesPath": "C:\\Users\\ayane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\4_HW3\\HW3Solution\\HW3Project\\obj\\",
+      "projectPath": "/home/mondo/Documents/School/Winter 2022/CS366/repo/w22---cs366-mondoyanez/4_HW3/HW3Solution/HW3Project/HW3Project.csproj",
+      "packagesPath": "/home/mondo/.nuget/packages/",
+      "outputPath": "/home/mondo/Documents/School/Winter 2022/CS366/repo/w22---cs366-mondoyanez/4_HW3/HW3Solution/HW3Project/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ayane\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/mondo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -63,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
       }
     }
   }

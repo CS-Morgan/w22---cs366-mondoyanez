@@ -1,18 +1,5 @@
-@model HW3Project.Models.UserLibrary
+@model HW3Project.Models.MovieList
 @using HW3Project.Models;
-
-@{
-    FilmLibrary harryPotter = new FilmLibrary(1, "Harry Potter and the Half-Blood Prince", "Family/Adventure", "2hr 33 min", 12);
-    FilmLibrary hungerGames = new FilmLibrary(2, "The Hunger Games", "Sci-Fi/Adventure", "2hr 22 min", 8);
-    FilmLibrary avengersEndgame = new FilmLibrary(3, "Avengers Endgame", "Action/Adventure/Drama", "3 hr 1 min", 15);
-    FilmLibrary spiderManNoWayHome = new FilmLibrary(4, "Spider-Man: No Way Home", "Action/Adventure/Fantasy", "2 hr 28 min", 13);
-    FilmLibrary onePieceFilmGold = new FilmLibrary(5, "One Piece Film: Gold", "Animation/Action/Adventure", "2 hr", 15);
-    FilmLibrary scaryMovie = new FilmLibrary(6, "Scary Movie", "Comedy", "1 hr 28 min", 9);
-    FilmLibrary matrixResurrections = new FilmLibrary(7, "The Matrix Resurrections", "2 hr 28 min", "Action/Sci-Fi", 12);
-    FilmLibrary paranormalActivity = new FilmLibrary(8, "Paranormal Activity", "1 hr 26 min", "Horror/Mystery", 7);
-    FilmLibrary insidious = new FilmLibrary(9, "Insidious", "1 hr 43 min", "Horror/Mystery/Thriller", 4);
-    FilmLibrary discovery = new FilmLibrary(10, "The Discovery", "1 hr 42 min", "Drama/Romance/Sci-Fi", 18);
-}
 
 <!DOCTYPE html>
 <html>
@@ -30,87 +17,27 @@
                     <tr><th>Film ID</th><th>Movie Title</th><th>Genre</th><th>Movie Length</th><th>Quantity</th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>@harryPotter.MovieId</td>
-                        <td>@harryPotter.MovieTitle</td>
-                        <td>@harryPotter.MovieGenre</td>
-                        <td>@harryPotter.MovieLength</td>
-                        <td>@harryPotter.QuantityInStock</td>
-                    </tr>
-                    <tr>
-                        <td>@hungerGames.MovieId</td>
-                        <td>@hungerGames.MovieTitle</td>
-                        <td>@hungerGames.MovieGenre</td>
-                        <td>@hungerGames.MovieLength</td>
-                        <td>@hungerGames.QuantityInStock</td>
-                    </tr>
-                    <tr>
-                        <td>@avengersEndgame.MovieId</td>
-                        <td>@avengersEndgame.MovieTitle</td>
-                        <td>@avengersEndgame.MovieGenre</td>
-                        <td>@avengersEndgame.MovieLength</td>
-                        <td>@avengersEndgame.QuantityInStock</td>
-                    </tr>
-                    <tr>
-                        <td>@spiderManNoWayHome.MovieId</td>
-                        <td>@spiderManNoWayHome.MovieTitle</td>
-                        <td>@spiderManNoWayHome.MovieGenre</td>
-                        <td>@spiderManNoWayHome.MovieLength</td>
-                        <td>@spiderManNoWayHome.QuantityInStock</td>
-                    </tr>
-                    <tr>
-                        <td>@onePieceFilmGold.MovieId</td>
-                        <td>@onePieceFilmGold.MovieTitle</td>
-                        <td>@onePieceFilmGold.MovieGenre</td>
-                        <td>@onePieceFilmGold.MovieLength</td>
-                        <td>@onePieceFilmGold.QuantityInStock</td>
-                    </tr>
-                    <tr>
-                        <td>@scaryMovie.MovieId</td>
-                        <td>@scaryMovie.MovieTitle</td>
-                        <td>@scaryMovie.MovieGenre</td>
-                        <td>@scaryMovie.MovieLength</td>
-                        <td>@scaryMovie.QuantityInStock</td>
-                    </tr>
-                    <tr>
-                        <td>@matrixResurrections.MovieId</td>
-                        <td>@matrixResurrections.MovieTitle</td>
-                        <td>@matrixResurrections.MovieGenre</td>
-                        <td>@matrixResurrections.MovieLength</td>
-                        <td>@matrixResurrections.QuantityInStock</td>
-                    </tr>
-                    <tr>
-                        <td>@paranormalActivity.MovieId</td>
-                        <td>@paranormalActivity.MovieTitle</td>
-                        <td>@paranormalActivity.MovieGenre</td>
-                        <td>@paranormalActivity.MovieLength</td>
-                        <td>@paranormalActivity.QuantityInStock</td>
-                    </tr>
-                    <tr>
-                        <td>@insidious.MovieId</td>
-                        <td>@insidious.MovieTitle</td>
-                        <td>@insidious.MovieGenre</td>
-                        <td>@insidious.MovieLength</td>
-                        <td>@insidious.QuantityInStock</td>
-                    </tr>
-                    <tr>
-                        <td>@discovery.MovieId</td>
-                        <td>@discovery.MovieTitle</td>
-                        <td>@discovery.MovieGenre</td>
-                        <td>@discovery.MovieLength</td>
-                        <td>@discovery.QuantityInStock</td>
-                    </tr>
+                    @foreach (var m in Model.films)
+                    {
+                        <tr>
+                            <td>@m.MovieId</td>
+                            <td>@m.MovieTitle</td>
+                            <td>@m.MovieGenre</td>
+                            <td>@m.MovieLength</td>
+                            <td>@m.QuantityInStock</td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </div>
 
         <div class = "text-center p-2">
             <h4>Enter movie you would like to rent by entering the information required</h4>
-            <form asp-action="MyLibrary" method="post">
+            <form asp-action="MyLibrary" method="get">
                 <div asp-validation-summary="All"></div>
                 <div>
-                    <label asp-for="MovieId">Enter movie id:</label>
-                    <input asp-for="MovieId" />
+                    <label>Enter movie id:</label>
+                    <input name ="movieId" min="1" max="10" type="number" required />
                 </div>
                 <button type="submit">SUBMIT</button>
             </form>

@@ -18,11 +18,24 @@ namespace HW3Project.Controllers
         [HttpGet]
         public ViewResult FilmLibrary()
         {
-            return View();
+            MovieList moviesAvailable = new MovieList();
+            return View("FilmLibrary", moviesAvailable);
         }
-        public ViewResult MyLibrary()
+        public ViewResult MyLibrary(int movieId)
         {
-            return View();
+            MovieList moviesAvaible = new MovieList();
+            UserLibrary movieAdded = new UserLibrary();
+
+            foreach(var m in moviesAvaible.films)
+            {
+                if (m.MovieId == movieId) 
+                {
+                    movieAdded.MovieId = m.MovieId;
+                    movieAdded.MovieTitle = m.MovieTitle;
+                }
+            }
+
+            return View(movieAdded);
         }
     }
 }

@@ -15,6 +15,7 @@ namespace HW3Project.Controllers
         {
             return View();
         }
+        [HttpGet]
         public ViewResult FilmLibrary()
         {
             return View();

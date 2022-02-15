@@ -1,7 +1,24 @@
-@{
-    ViewData["Title"] = "My Library";
-}
+@model HW3Project.Models.UserLibrary
+@using HW3Project.Models;
 
-<div class="text-center">
-    <h1 class="display-4">My Library</h1>
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title> Film Library </title>
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    </head>
+    <body>
+        <div class = "text-center p-2">
+            <h1>Film Library</h1>
+            <table class = "table table-bordered table-striped table-sm">
+                <thead>
+                    <tr><th>Movie Title</th><th>Return Date</th>
+                </thead>
+                <tbody>
+                    @* @foreach (HW3Project.Models.UserLibrary u in ) *@
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

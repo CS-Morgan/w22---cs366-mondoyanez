@@ -1,5 +1,3 @@
-using System;
-
 namespace HW3Project.Models
 {
     public class FilmLibrary
@@ -18,13 +16,5 @@ namespace HW3Project.Models
             MovieLength = Length;
             QuantityInStock = Quantity;
         }
-
-        // public void decrementFilms(int id, int amount)
-        // {
-        //     if (amount > this.QuantityInStock)
-        //     {
-        //         throw new IndexOutOfRangeException;
-        //     }
-        // }
     }
 }

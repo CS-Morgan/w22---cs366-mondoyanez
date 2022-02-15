@@ -1,3 +1,4 @@
+@model HW3Project.Models.UserLibrary
 @using HW3Project.Models;
 
 @{
@@ -21,6 +22,7 @@
         <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
     </head>
     <body>
+
         <div class = "text-center p-2">
             <h1>Film Library</h1>
             <table class = "table table-bordered table-striped table-sm">
@@ -100,6 +102,18 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+
+        <div class = "text-center p-2">
+            <h4>Enter movie you would like to rent by entering the information required</h4>
+            <form asp-action="MyLibrary" method="post">
+                <div asp-validation-summary="All"></div>
+                <div>
+                    <label asp-for="MovieId">Enter movie id:</label>
+                    <input asp-for="MovieId" />
+                </div>
+                <button type="submit">SUBMIT</button>
+            </form>
         </div>
     </body>
 </html>

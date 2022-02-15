@@ -1,3 +1,8 @@
+body
+{
+    background-color: plum;
+    color: black;
+}
 p 
 {
     font-family: 'Times New Roman', Times, serif;
@@ -12,5 +17,30 @@ p
 }
 .default
 {
+    color: black;
+}
+.perfect
+{
+    color: gold;
+}
+.pass
+{
+    color: greenyellow;
+}
+.fail
+{
+    color: red;
+}
+.submitButton
+{
+    text-align: center;
+}
+h1
+{
+    text-align: center;
+}
+button[type="button"]
+{
+    background: cyan;
     color: black;
 }

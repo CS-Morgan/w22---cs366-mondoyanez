@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "CS 366 HW4";
+}
+
+<div class="text-center border">
+    <h1>CS366 Homework 4</h1>
+    <h1>2022</h1>
+    <br />
+    <p class="home">
+        A couple forms and some simple serverside logic --learning the basics of GET, POST, form data and parameter and model binding. Doing it all with ASP.NET MVC Core.
+    </p>
+    <a asp-area="" asp-controller="Home" asp-action="Index">
+    <button class="rounded btn-home" type="button">Here's the assignment</button>
+    </a>
+    <br />
+    <br />
+</div>
+
+<br /><br />
+
+<div class="row border">
+    <div class="col-md">
+        <h2>RGB Color</h2>
+        <p class="home">
+            Want to know what a particular RGB color looks ? How about it's web color format? Here you go. Uses query strings to send form data to the server, which reads them
+            in the Request object. It then performs the calculation and formats the result in a view to return to you.
+        </p>
+        <a asp-area="" asp-controller="Home" asp-action="rgbcolor">
+        <button class="rounded btn-primary" type="button">Try it out</button>
+        </a>
+    </div>
+    <div class="col-md">
+        <h2>Color Interpolation</h2>
+        <p class="home">
+            Typical online color choosers are way too useful. We wanted something fun and completely useless.
+            This form POST's the data to the server and uses parameter binding to make it easy.
+        </p>
+        <a asp-area="" asp-controller="ColorInterpolator" asp-action="create">
+        <button class="rounded btn-primary" type="button">Check it out</button>
+        </a>
+    </div>
+</div>

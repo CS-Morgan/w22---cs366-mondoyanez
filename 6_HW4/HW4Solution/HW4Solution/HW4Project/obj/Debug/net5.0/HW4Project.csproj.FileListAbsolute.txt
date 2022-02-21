@@ -38,3 +38,4 @@ C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez
 C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez\6_HW4\HW4Solution\HW4Solution\HW4Project\obj\Debug\net5.0\ref\HW4Project.dll
 C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez\6_HW4\HW4Solution\HW4Solution\HW4Project\obj\Debug\net5.0\HW4Project.csproj.CopyComplete
 C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez\6_HW4\HW4Solution\HW4Solution\HW4Project\obj\Debug\net5.0\Razor\Views\Home\RGBColor.cshtml.g.cs
+C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez\6_HW4\HW4Solution\HW4Solution\HW4Project\obj\Debug\net5.0\Razor\Views\ColorInterpolator\Create.cshtml.g.cs

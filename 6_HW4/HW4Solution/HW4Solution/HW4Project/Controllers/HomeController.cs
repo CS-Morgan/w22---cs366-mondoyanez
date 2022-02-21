@@ -33,5 +33,12 @@ namespace HW4Project.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [HttpGet]
+        public IActionResult RGBColor(int? red, int? green, int? blue)
+        {
+            Color color = new Color { red = red, green = green, blue = blue};
+            return View("RGBColor", color);
+        }
     }
 }

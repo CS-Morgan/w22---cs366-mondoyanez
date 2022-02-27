@@ -1,4 +1,5 @@
-﻿@{
+﻿@model ColorInterpolation
+@{
     ViewData["Title"] = "CS 366 HW4";
 }
 
@@ -9,33 +10,83 @@
 <div class="row">
     <div class="col">
         <p>Please enter colors in HTML hexadecimal format #AABBCC</p>
+
+        <form asp-controller="ColorInterpolator" asp-action="Create" method="post">
+            <div asp-validation-summary="All"></div>
+
+            <div class="row">
+                <label>First color</label>
+            </div>
+            <div class="row">
+                <input asp-for="FirstColor" placeholder="#12B37F">
+            </div>
+
+            <div class="row">
+                <label>Second color</label>
+            </div>
+            <div class="row">
+                <input asp-for="SecondColor" placeholder="#A13344">
+            </div>
+
+            <div class="row">
+                <label for="colors">Number of Colors</label>    
+            </div>
+            <div class="row">
+                <input id="colors" asp-for="NumColors" min="2" max="50">
+            </div>
+
+            <br>
+
+            <div class="row">
+                <button class="rounded btn-primary" type="submit">Generate Colors</button>
+            </div>
+
+        </form>
+
     </div>
     <div class="col">
-        this is where the colors will go
+        <p>HTML</p>
+        @if (Model != null)
+        {
+            <div class="row">#@Model.FirstColor</div>
+            <div class="row">#@Model.SecondColor</div>
+        }
+    </div>
+    <div class="col">
+        <p>Color</p>
+        @if (Model != null)
+        {
+            <div class="row current-color" style="background-color: #@Model.FirstColor;"></div>
+            <div class="row current-color" style="background-color: #@Model.SecondColor;"></div>
+        }
     </div>
 </div>
 
-<div class="row form-group">
-    <label for="firstColor" class="col-form-label">First Color</label>
-</div>
-<div class="row form-group">
-    <input type="text" id="firstColor" name="firstColor" class="input-box" />
-</div>
-
-<div class="row form-group">
-    <label for="secondColor" class="col-form-label">Second Color</label>
-</div>
-<div class="row form-group">
-    <input type="text" id="secondColor" name="secondColor" class="input-box" />
-</div>
-
-<div class="row form-group">
-    <label for="numColors" class="col-form-label">Number of Colors</label>
-</div>
-<div class="row form-group">
-    <input type="text" id="numColors" name="numColors" class="input-box" />
-</div>
-
-<div class="row form-group">
-    <button class="rounded btn-primary" type="submit">Generate Colors</button>
-</div>
+@* @if (Model != null)
+{
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"><p>#@Model.FirstColor</p></div>
+        <div class="col current-color" style="background-color: #@Model.FirstColor;"></div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"><p>#FF0000</p></div>
+        <div class="col current-color" style="background-color: #FF0000;"></div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"><p>#00FF00</p></div>
+        <div class="col current-color" style="background-color: #00FF00;"></div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"><p>#0000FF</p></div>
+        <div class="col current-color" style="background-color: #0000FF;"></div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"><p>#@Model.SecondColor</p></div>
+        <div class="col current-color" style="background-color: #@Model.SecondColor;"></div>
+    </div>
+} *@

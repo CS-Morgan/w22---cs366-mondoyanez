@@ -5,15 +5,23 @@ namespace HW4Project.Controllers
 {
     public class ColorInterpolator : Controller
     {
-        //[HttpPost]
-        //public IActionResult Create(ColorInterpolation c)
-        //{
-        //    return View("Create", c);
-        //}
-
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(ColorInterpolation c)
+        {
+            if (ModelState.IsValid)
+            {
+                return View("Create", c);
+            }
+            else
+            {
+                return View("Create", c);
+            }
         }
     }
 }

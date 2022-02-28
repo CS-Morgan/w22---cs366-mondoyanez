@@ -8,7 +8,7 @@
 </div>
 
 <div class="row">
-    <div class="col">
+    <div class="col-md-6">
         <p>Please enter colors in HTML hexadecimal format #AABBCC</p>
 
         <form asp-controller="ColorInterpolator" asp-action="Create" method="post">
@@ -44,49 +44,50 @@
         </form>
 
     </div>
-    <div class="col">
+    <div class="col-md-4">
         <p>HTML</p>
-        @if (Model != null)
-        {
-            <div class="row">#@Model.FirstColor</div>
-            <div class="row">#@Model.SecondColor</div>
-        }
     </div>
-    <div class="col">
+    <div class="col-md-2">
         <p>Color</p>
-        @if (Model != null)
-        {
-            <div class="row current-color" style="background-color: #@Model.FirstColor;"></div>
-            <div class="row current-color" style="background-color: #@Model.SecondColor;"></div>
-        }
     </div>
 </div>
 
-@* @if (Model != null)
+@if (Model != null)
 {
+    double hueStart, saturationStart, valueStart;
+    double hueEnd, saturationEnd, valueEnd;
+
+    Color colorStart = new Color();
+    Color colorEnd = new Color();
+
+    colorStart = colorStart.HexToColor(@Model.FirstColor);
+    colorEnd = colorEnd.HexToColor(@Model.SecondColor);
+
+    ColorInterpolation.ColorToHSV(colorStart, out hueStart, out saturationStart, out valueStart);
+    ColorInterpolation.ColorToHSV(colorEnd, out hueEnd, out saturationEnd, out valueEnd);
+
+    var hueIncrement = (hueEnd - hueStart) / (@Model.NumColors);
+    var satIncrement = (saturationEnd - saturationStart) / (@Model.NumColors);
+    var valueIncrement = (valueEnd - valueStart) / (@Model.NumColors);
+
+    @for (int i = 0; i < @Model.NumColors - 1; i++)
+    {
+        var newHue = (double)(hueStart + hueIncrement * i);
+        var newSat = (double)(saturationStart + satIncrement * i);
+        var newValue = (double)(valueStart + valueIncrement * i);
+
+        Color newColor = ColorInterpolation.ColorFromHSV(newHue, newSat, newValue);
+
+        string newHex = "#" + newColor.RGBToHex();
+
+        <div class="row">
+            <div class="col"><p>@newHex</p></div>
+            <div class="col current-color" style="background-color: @newHex;"></div>
+        </div>
+    }
+
     <div class="row">
-        <div class="col"></div>
-        <div class="col"><p>#@Model.FirstColor</p></div>
-        <div class="col current-color" style="background-color: #@Model.FirstColor;"></div>
+            <div class="col"><p>#@Model.SecondColor</p></div>
+            <div class="col current-color" style="background-color: #@Model.SecondColor;"></div>
     </div>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col"><p>#FF0000</p></div>
-        <div class="col current-color" style="background-color: #FF0000;"></div>
-    </div>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col"><p>#00FF00</p></div>
-        <div class="col current-color" style="background-color: #00FF00;"></div>
-    </div>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col"><p>#0000FF</p></div>
-        <div class="col current-color" style="background-color: #0000FF;"></div>
-    </div>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col"><p>#@Model.SecondColor</p></div>
-        <div class="col current-color" style="background-color: #@Model.SecondColor;"></div>
-    </div>
-} *@
+}

@@ -44,12 +44,13 @@
         </form>
 
     </div>
-    <div class="col-md-4">
+    @* <div class="col-md-4">
         <p>HTML</p>
     </div>
     <div class="col-md-2">
         <p>Color</p>
-    </div>
+    </div> *@
+
 </div>
 
 @if (Model != null)
@@ -70,7 +71,31 @@
     var satIncrement = (saturationEnd - saturationStart) / (@Model.NumColors);
     var valueIncrement = (valueEnd - valueStart) / (@Model.NumColors);
 
-    @for (int i = 0; i < @Model.NumColors - 1; i++)
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-1"><p>HTML</p></div>
+        <div class="col-md-2"><p>Color</p></div>
+    </div>
+
+    @if (Model.FirstColor.Substring(0,1).Equals("#"))
+    {
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-1"><p>@Model.FirstColor</p></div>
+            <div class="col-md-2 current-color" style="background-color: @Model.FirstColor;"></div>
+        </div>
+    }
+    else 
+    {
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-1"><p>#@Model.FirstColor</p></div>
+            <div class="col-md-2 current-color" style="background-color: #@Model.FirstColor;"></div>
+        </div>
+    }
+
+
+    @for (int i = 1; i < @Model.NumColors - 1; i++)
     {
         var newHue = (double)(hueStart + hueIncrement * i);
         var newSat = (double)(saturationStart + satIncrement * i);
@@ -81,13 +106,27 @@
         string newHex = "#" + newColor.RGBToHex();
 
         <div class="row">
-            <div class="col"><p>@newHex</p></div>
-            <div class="col current-color" style="background-color: @newHex;"></div>
+            <div class="col-md-6"></div>
+            <div class="col-md-1"><p>@newHex</p></div>
+            <div class="col-md-2 current-color" style="background-color: @newHex;"></div>
         </div>
     }
 
-    <div class="row">
-            <div class="col"><p>#@Model.SecondColor</p></div>
-            <div class="col current-color" style="background-color: #@Model.SecondColor;"></div>
-    </div>
+    @if (Model.SecondColor.Substring(0,1).Equals("#"))
+    {
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-1"><p>@Model.SecondColor</p></div>
+            <div class="col-md-2 current-color" style="background-color: @Model.SecondColor;"></div>
+        </div>
+    }
+    else 
+    {
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-1"><p>#@Model.SecondColor</p></div>
+            <div class="col-md-2 current-color" style="background-color: #@Model.SecondColor;"></div>
+        </div>
+    }
+    
 }

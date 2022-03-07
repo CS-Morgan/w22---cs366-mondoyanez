@@ -12,10 +12,15 @@ namespace MadLibs.Controllers
     public class CampController : Controller
     {
         [HttpGet]
-        public IActionResult GenerateMadLibs()
+        public IActionResult GenerateMadLibs(string name, string campName, string adjective1, string activity1, 
+        string activity2, string pluralNoun, string adjective2, string noun, string nickName)
         {
-
-            return View("GenerateMadLibs");
+            CampMadLib campMadLib = new CampMadLib() 
+            {
+                Name = name, CampName = campName, Adjective1 = adjective1, Activity1 = activity1, Activity2 = activity2,
+                PluralNoun = pluralNoun, Adjective2 = adjective2, Noun = noun, NickName = nickName
+            };
+            return View("GenerateMadLibs", campMadLib);
         }
 
         [HttpGet]
@@ -24,10 +29,17 @@ namespace MadLibs.Controllers
             return View("DisplayMadLibs");
         }
 
-        // [HttpPost]
-        // public IActionResult DisplayMadLibs(RoadTripMadLib roadTrip)
-        // {
-        //     return View("DisplayMadLibs", roadTrip);
-        // }
+        [HttpPost]
+        public IActionResult DisplayMadLibs(CampMadLib campMadLib)
+        {
+            if (ModelState.IsValid)
+            {
+                return View("DisplayMadLibs", campMadLib);
+            }
+            else
+            {
+                return View("GenerateMadLibs");
+            }
+        }
     }
 }

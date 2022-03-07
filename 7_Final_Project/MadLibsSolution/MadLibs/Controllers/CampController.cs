@@ -9,25 +9,25 @@ using MadLibs.Models;
 
 namespace MadLibs.Controllers
 {
-    public class MadLibController : Controller
+    public class CampController : Controller
     {
-
         [HttpGet]
         public IActionResult GenerateMadLibs()
         {
-            return View();
+
+            return View("GenerateMadLibs");
         }
 
         [HttpGet]
         public IActionResult DisplayMadLibs()
         {
-            return View();
+            return View("DisplayMadLibs");
         }
 
         // [HttpPost]
-        // public IActionResult DisplayMadLibs()
+        // public IActionResult DisplayMadLibs(RoadTripMadLib roadTrip)
         // {
-        //     return View();
+        //     return View("DisplayMadLibs", roadTrip);
         // }
     }
 }

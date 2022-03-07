@@ -1,4 +1,4 @@
-@model Madlib
+@model RoadTripMadLib
 
 @{
     ViewData["Title"] = "MadLib";
@@ -20,7 +20,7 @@
 
 <div class="row center-content">
 
-    <form asp-controller="MadLib" asp-action="GenerateMadLibs" method="get">
+    <form asp-controller="RoadTrip" asp-action="DisplayMadLibs" method="post">
         <div asp-validation-summary="All"></div>
 
     <div class="row">
@@ -301,12 +301,3 @@
 
     </form>
 </div>
-
-@if (Model != null)
-{
-    <div class="row">
-        <div class="col">
-            <p>@Model.Noun1</p>
-        </div>
-    </div>
-}

@@ -38,5 +38,5 @@ C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez
 C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez\7_Final_Project\MadLibsSolution\MadLibs\obj\Debug\net5.0\MadLibs.genruntimeconfig.cache
 C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez\7_Final_Project\MadLibsSolution\MadLibs\obj\Debug\net5.0\ref\MadLibs.dll
 C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez\7_Final_Project\MadLibsSolution\MadLibs\obj\Debug\net5.0\MadLibs.csproj.CopyComplete
-C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez\7_Final_Project\MadLibsSolution\MadLibs\obj\Debug\net5.0\Razor\Views\MadLib\DisplayMadLibs.cshtml.g.cs
-C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez\7_Final_Project\MadLibsSolution\MadLibs\obj\Debug\net5.0\Razor\Views\MadLib\GenerateMadLibs.cshtml.g.cs
+C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez\7_Final_Project\MadLibsSolution\MadLibs\obj\Debug\net5.0\Razor\Views\RoadTrip\DisplayMadLibs.cshtml.g.cs
+C:\Users\ayane\Desktop\work\School\Winter 2022\CS366\repo\w22---cs366-mondoyanez\7_Final_Project\MadLibsSolution\MadLibs\obj\Debug\net5.0\Razor\Views\RoadTrip\GenerateMadLibs.cshtml.g.cs

@@ -4,6 +4,7 @@
 // Write your JavaScript code.
 
 const defaultCamp = document.querySelector('#CampDefault');
+const clearCamp = document.querySelector('#CampClear');
 
 const name = document.getElementById('Name');
 const campName = document.getElementById('CampName');
@@ -62,4 +63,17 @@ defaultCamp.addEventListener('click', function()
         nickName.setAttribute("value", "Lioness");
     }
 
+});
+
+clearCamp.addEventListener('click', function() 
+{
+    name.removeAttribute("value");
+    campName.removeAttribute("value");
+    adjective1.removeAttribute("value");
+    activity1.removeAttribute("value");
+    activity2.removeAttribute("value");
+    pluralNoun.removeAttribute("value");
+    adjective2.removeAttribute("value");
+    noun.removeAttribute("value");
+    nickName.removeAttribute("value");
 });

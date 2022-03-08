@@ -67,10 +67,10 @@ namespace MadLibs.Models
         [Required]
         public string Noun8 { get; set; }
         [Required]
-        public string Adjective5 { get; set; }
+        public string Verb11 { get; set; }
         [Required]
         public string Noun9 { get; set; }
         [Required]
-        public string Adjective6 { get; set; }
+        public string Adjective5 { get; set; }
     }
 }

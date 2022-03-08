@@ -5,6 +5,8 @@
 
 const defaultCamp = document.querySelector('#CampDefault');
 const clearCamp = document.querySelector('#CampClear');
+const defaultTrip = document.querySelector('#RoadTripDefault');
+const clearTrip = document.querySelector('#RoadTripClear');
 
 const name = document.getElementById('Name');
 const campName = document.getElementById('CampName');
@@ -16,64 +18,83 @@ const adjective2 = document.getElementById('Adjective2');
 const noun = document.getElementById('Noun');
 const nickName = document.getElementById('NickName');
 
-defaultCamp.addEventListener('click', function() 
+const noun1 = document.getElementById('Noun1');
+
+$(document).ready(function()
 {
-    if (name.getAttribute("value") === '')
+    defaultCamp.addEventListener('click', function()
     {
-        name.setAttribute("value", "Mary");
-    }
-    
-    if (campName.getAttribute("value") === '')
-    {
-        campName.setAttribute("value", "Dakota");
-    }
+        if (name.getAttribute("value") === '')
+        {
+            name.setAttribute("value", "Mary");
+        }
+        
+        if (campName.getAttribute("value") === '')
+        {
+            campName.setAttribute("value", "Dakota");
+        }
 
-    if (adjective1.getAttribute("value") === '')
-    {
-        adjective1.setAttribute("value", "great");
-    }
+        if (adjective1.getAttribute("value") === '')
+        {
+            adjective1.setAttribute("value", "great");
+        }
 
-    if (activity1.getAttribute("value") === '')
-    {
-        activity1.setAttribute("value", "fishing");
-    }
+        if (activity1.getAttribute("value") === '')
+        {
+            activity1.setAttribute("value", "fishing");
+        }
 
-    if (activity2.getAttribute("value") === '')
-    {
-        activity2.setAttribute("value", "rafting");
-    }
+        if (activity2.getAttribute("value") === '')
+        {
+            activity2.setAttribute("value", "rafting");
+        }
 
-    if (pluralNoun.getAttribute("value") === '')
-    {
-        pluralNoun.setAttribute("value", "smores");
-    }
+        if (pluralNoun.getAttribute("value") === '')
+        {
+            pluralNoun.setAttribute("value", "smores");
+        }
 
-    if (adjective2.getAttribute("value") === '')
-    {
-        adjective2.setAttribute("value", "tasty");
-    }
+        if (adjective2.getAttribute("value") === '')
+        {
+            adjective2.setAttribute("value", "tasty");
+        }
 
-    if (noun.getAttribute("value") === '')
-    {
-        noun.setAttribute("value", "a lot");
-    }
+        if (noun.getAttribute("value") === '')
+        {
+            noun.setAttribute("value", "a lot");
+        }
 
-    if (nickName.getAttribute("value") === '')
-    {
-        nickName.setAttribute("value", "Lioness");
-    }
+        if (nickName.getAttribute("value") === '')
+        {
+            nickName.setAttribute("value", "Lioness");
+        }
 
+    });
 });
 
-clearCamp.addEventListener('click', function() 
+$(document).ready(function()
 {
-    name.removeAttribute("value");
-    campName.removeAttribute("value");
-    adjective1.removeAttribute("value");
-    activity1.removeAttribute("value");
-    activity2.removeAttribute("value");
-    pluralNoun.removeAttribute("value");
-    adjective2.removeAttribute("value");
-    noun.removeAttribute("value");
-    nickName.removeAttribute("value");
+    clearCamp.addEventListener('click', function()
+    {
+        name.removeAttribute("value");
+        campName.removeAttribute("value");
+        adjective1.removeAttribute("value");
+        activity1.removeAttribute("value");
+        activity2.removeAttribute("value");
+        pluralNoun.removeAttribute("value");
+        adjective2.removeAttribute("value");
+        noun.removeAttribute("value");
+        nickName.removeAttribute("value");
+    });
+});
+
+$(document).ready(function()
+{
+    defaultTrip.addEventListener('click', function()
+    {
+        if (noun1.getAttribute("value") === '')
+        {
+            noun1.setAttribute("value", "CAR");
+        }
+    });
 });

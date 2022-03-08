@@ -19,6 +19,35 @@ const noun = document.getElementById('Noun');
 const nickName = document.getElementById('NickName');
 
 const noun1 = document.getElementById('Noun1');
+const noun2 = document.getElementById('Noun2');
+const adjective3 = document.getElementById('Adjective3');
+const verb1 = document.getElementById('Verb1');
+const verb2 = document.getElementById('Verb2');
+const number1 = document.getElementById('Number1');
+const verb3 = document.getElementById("Verb3");
+const adverb1 = document.getElementById("Adverb1");
+const noun3 = document.getElementById("Noun3");
+const color1 = document.getElementById("Color1");
+const verb4 = document.getElementById("Verb4");
+const noun4 = document.getElementById("Noun4");
+const exlamation1 = document.getElementById("Exlamation1");
+const verb5 = document.getElementById("Verb5");
+const adverb2 = document.getElementById("Adverb2");
+const noun5 = document.getElementById("Noun5");
+const verb6 = document.getElementById("Verb6");
+const verb7 = document.getElementById("Verb7");
+const noun6 = document.getElementById("Noun6");
+const verb8 = document.getElementById("Verb8");
+const verb9 = document.getElementById("Verb9");
+const noun7 = document.getElementById("Noun7");
+const verb10 = document.getElementById("Verb10");
+const adjective4 = document.getElementById("Adjective4");
+const adverb3 = document.getElementById("Adverb3");
+const adverb4 = document.getElementById("Adverb4");
+const noun8 = document.getElementById("Noun8");
+const verb11 = document.getElementById("Verb11");
+const noun9 = document.getElementById("Noun9");
+const adjective5 = document.getElementById("Adjective5");
 
 $(document).ready(function()
 {
@@ -96,5 +125,211 @@ $(document).ready(function()
         {
             noun1.setAttribute("value", "CAR");
         }
+
+        if (adjective1.getAttribute("value") === '')
+        {
+            adjective1.setAttribute("value", "AMAZING");
+        }
+
+        if (noun2.getAttribute("value") === '')
+        {
+            noun2.setAttribute("value", "PARK");
+        }
+
+        if (adjective2.getAttribute("value") === '')
+        {
+            adjective2.setAttribute("value", "CAR");
+        }
+
+        if (adjective3.getAttribute("value") === '')
+        {
+            adjective3.setAttribute("value", "GREEN");
+        }
+
+        if (verb1.getAttribute("value") === '')
+        {
+            verb1.setAttribute("value", "JUMPED");
+        }
+
+        if (verb2.getAttribute("value") === '')
+        {
+            verb2.setAttribute("value", "RAN");
+        }
+
+        if (number1.getAttribute("value") === '0')
+        {
+            number1.setAttribute("value", "10");
+        }
+
+        if (verb3.getAttribute("value") === '')
+        {
+            verb3.setAttribute("value", "RAN");
+        }
+
+        if (adverb1.getAttribute("value") === '')
+        {
+            adverb1.setAttribute("value", "QUICKLY")
+        }
+
+        if (noun3.getAttribute("value") === '')
+        {
+            noun3.setAttribute("value", "ROAD");
+        }
+
+        if (color1.getAttribute("value") === '')
+        {
+            color1.setAttribute("value", "GREEN");
+        }
+
+        if (verb4.getAttribute("value") === '')
+        {
+            verb4.setAttribute("value", "JUMPED");
+        }
+
+        if (noun4.getAttribute("value") === '')
+        {
+            noun4.setAttribute("value", "COFFEE");
+        }
+
+        if (exlamation1.getAttribute("value") === '')
+        {
+            exlamation1.setAttribute("value", "NO");
+        }
+
+        if (verb5.getAttribute("value") === '')
+        {
+            verb5.setAttribute("value", "YELLING");
+        }
+
+        if (adverb2.getAttribute("value") === '')
+        {
+            adverb2.setAttribute("value", "QUICKLY");
+        }
+
+        if (noun5.getAttribute("value") === '')
+        {
+            noun5.setAttribute("value", "CAR");
+        }
+
+        if (verb6.getAttribute("value") === '')
+        {
+            verb6.setAttribute("value", "SWERVED");
+        }
+
+        if (verb7.getAttribute("value") === '')
+        {
+            verb7.setAttribute("value", "JUMPED");
+        }
+
+        if (noun6.getAttribute("value") === '')
+        {
+            noun6.setAttribute("value", "WINDSHIELD");
+        }
+
+        if (pluralNoun.getAttribute("value") === '')
+        {
+            pluralNoun.setAttribute("value", "BREAKS");
+        }
+
+        if (verb8.getAttribute("value") === '')
+        {
+            verb8.setAttribute("value", "SUPRISED");
+        }
+
+        if (name.getAttribute("value") === '')
+        {
+            name.setAttribute("value", "BILL");
+        }
+
+        if (verb9.getAttribute("value") === '')
+        {
+            verb9.setAttribute("value", "LEAP");
+        }
+
+        if (noun7.getAttribute("value") === '')
+        {
+            noun7.setAttribute("value", "KANGAROO")
+        }
+
+        if (verb10.getAttribute("value") === '')
+        {
+            verb10.setAttribute("value", "DASHED");
+        }
+
+        if (adjective4.getAttribute("value") === '')
+        {
+            adjective4.setAttribute("value", "GREEN");
+        }
+
+        if (adverb3.getAttribute("value") === '')
+        {
+            adverb3.setAttribute("value", "QUICKLY");
+        }
+
+        if (adverb4.getAttribute("value") === '')
+        {
+            adverb4.setAttribute("value", "BLINDLY");
+        }
+
+        if (noun8.getAttribute("value") === '')
+        {
+            noun8.setAttribute("value", "CAR");
+        }
+
+        if (verb11.getAttribute("value") === '')
+        {
+            verb11.setAttribute("value", "TRIP")
+        }
+
+        if (noun9.getAttribute("value") === '')
+        {
+            noun9.setAttribute("value", "PARK");
+        }
+
+        if (adjective5.getAttribute("value") === '')
+        {
+            adjective5.setAttribute("value", "CRAZY");
+        }
+    });
+});
+
+$(document).ready(function()
+{
+    clearTrip.addEventListener('click', function()
+    {
+        noun1.removeAttribute("value");
+        adjective1.removeAttribute("value");
+        noun2.removeAttribute("value");
+        adjective2.removeAttribute("value");
+        adjective3.removeAttribute("value");
+        verb1.removeAttribute("value");
+        verb2.removeAttribute("value");
+        number1.setAttribute("value", "0");
+        verb3.removeAttribute("value");
+        adverb1.removeAttribute("value");
+        noun3.removeAttribute("value");
+        color1.removeAttribute("value");
+        verb4.removeAttribute("value");
+        noun4.removeAttribute("value");
+        exlamation1.removeAttribute("value");
+        verb5.removeAttribute("value");
+        adverb2.removeAttribute("value");
+        noun5.removeAttribute("value");
+        verb6.removeAttribute("value");
+        verb7.removeAttribute("value");
+        noun6.removeAttribute("value");
+        pluralNoun.removeAttribute("value");
+        verb8.removeAttribute("value");
+        name.removeAttribute("value");
+        verb9.removeAttribute("value");
+        noun7.removeAttribute("value");
+        verb10.removeAttribute("value");
+        adjective4.removeAttribute("value");
+        adverb3.removeAttribute("value");
+        adverb4.removeAttribute("value");
+        noun8.removeAttribute("value");
+        verb11.removeAttribute("value");
+        noun9.removeAttribute("value");
+        adjective5.removeAttribute("value");
     });
 });

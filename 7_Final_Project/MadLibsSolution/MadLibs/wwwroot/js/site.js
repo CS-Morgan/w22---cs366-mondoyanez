@@ -105,15 +105,15 @@ $(document).ready(function()
 {
     clearCamp.addEventListener('click', function()
     {
-        name.removeAttribute("value");
-        campName.removeAttribute("value");
-        adjective1.removeAttribute("value");
-        activity1.removeAttribute("value");
-        activity2.removeAttribute("value");
-        pluralNoun.removeAttribute("value");
-        adjective2.removeAttribute("value");
-        noun.removeAttribute("value");
-        nickName.removeAttribute("value");
+        name.setAttribute("value", "");
+        campName.setAttribute("value", "");
+        adjective1.setAttribute("value", "");
+        activity1.setAttribute("value", "");
+        activity2.setAttribute("value", "");
+        pluralNoun.setAttribute("value", "");
+        adjective2.setAttribute("value", "");
+        noun.setAttribute("value", "");
+        nickName.setAttribute("value", "");
     });
 });
 
@@ -297,39 +297,39 @@ $(document).ready(function()
 {
     clearTrip.addEventListener('click', function()
     {
-        noun1.removeAttribute("value");
-        adjective1.removeAttribute("value");
-        noun2.removeAttribute("value");
-        adjective2.removeAttribute("value");
-        adjective3.removeAttribute("value");
-        verb1.removeAttribute("value");
-        verb2.removeAttribute("value");
+        noun1.setAttribute("value", "");
+        adjective1.setAttribute("value", "");
+        noun2.setAttribute("value", "");
+        adjective2.setAttribute("value", "");
+        adjective3.setAttribute("value", "");
+        verb1.setAttribute("value", "");
+        verb2.setAttribute("value", "");
         number1.setAttribute("value", "0");
-        verb3.removeAttribute("value");
-        adverb1.removeAttribute("value");
-        noun3.removeAttribute("value");
-        color1.removeAttribute("value");
-        verb4.removeAttribute("value");
-        noun4.removeAttribute("value");
-        exlamation1.removeAttribute("value");
-        verb5.removeAttribute("value");
-        adverb2.removeAttribute("value");
-        noun5.removeAttribute("value");
-        verb6.removeAttribute("value");
-        verb7.removeAttribute("value");
-        noun6.removeAttribute("value");
-        pluralNoun.removeAttribute("value");
-        verb8.removeAttribute("value");
-        name.removeAttribute("value");
-        verb9.removeAttribute("value");
-        noun7.removeAttribute("value");
-        verb10.removeAttribute("value");
-        adjective4.removeAttribute("value");
-        adverb3.removeAttribute("value");
-        adverb4.removeAttribute("value");
-        noun8.removeAttribute("value");
-        verb11.removeAttribute("value");
-        noun9.removeAttribute("value");
-        adjective5.removeAttribute("value");
+        verb3.setAttribute("value", "");
+        adverb1.setAttribute("value", "");
+        noun3.setAttribute("value", "");
+        color1.setAttribute("value", "");
+        verb4.setAttribute("value", "");
+        noun4.setAttribute("value", "");
+        exlamation1.setAttribute("value", "");
+        verb5.setAttribute("value", "");
+        adverb2.setAttribute("value", "");
+        noun5.setAttribute("value", "");
+        verb6.setAttribute("value", "");
+        verb7.setAttribute("value", "");
+        noun6.setAttribute("value", "");
+        pluralNoun.setAttribute("value", "");
+        verb8.setAttribute("value", "");
+        name.setAttribute("value", "");
+        verb9.setAttribute("value", "");
+        noun7.setAttribute("value", "");
+        verb10.setAttribute("value", "");
+        adjective4.setAttribute("value", "");
+        adverb3.setAttribute("value", "");
+        adverb4.setAttribute("value", "");
+        noun8.setAttribute("value", "");
+        verb11.setAttribute("value", "");
+        noun9.setAttribute("value", "");
+        adjective5.setAttribute("value", "");
     });
 });

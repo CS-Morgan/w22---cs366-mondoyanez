@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\ayane\\Desktop\\School\\WOU\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\MadLibs.csproj",
+  "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\MadLibs.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,58 +15619,58 @@
   "RootNamespace": "MadLibs",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\School\\WOU\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\School\\WOU\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Camp\\GenerateMadLibs.cshtml",
-      "TargetPath": "Views\\Camp\\GenerateMadLibs.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\School\\WOU\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\RoadTrip\\GenerateMadLibs.cshtml",
-      "TargetPath": "Views\\RoadTrip\\GenerateMadLibs.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\School\\WOU\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\School\\WOU\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\School\\WOU\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\School\\WOU\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Camp\\DisplayMadLibs.cshtml",
+      "TargetPath": "Views\\Camp\\DisplayMadLibs.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\RoadTrip\\GenerateMadLibs.cshtml",
+      "TargetPath": "Views\\RoadTrip\\GenerateMadLibs.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\School\\WOU\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\School\\WOU\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\School\\WOU\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\RoadTrip\\DisplayMadLibs.cshtml",
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\RoadTrip\\DisplayMadLibs.cshtml",
       "TargetPath": "Views\\RoadTrip\\DisplayMadLibs.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ayane\\Desktop\\School\\WOU\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Camp\\DisplayMadLibs.cshtml",
-      "TargetPath": "Views\\Camp\\DisplayMadLibs.cshtml",
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ayane\\Desktop\\work\\School\\Winter 2022\\CS366\\repo\\w22---cs366-mondoyanez\\7_Final_Project\\MadLibsSolution\\MadLibs\\Views\\Camp\\GenerateMadLibs.cshtml",
+      "TargetPath": "Views\\Camp\\GenerateMadLibs.cshtml",
       "FileKind": "mvc"
     }
   ],
